@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dataentry.ochanya.com.dataentry"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="26" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/smimage"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/smimage"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="dataentry.ochanya.com.dataentry.User_Login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="dataentry.ochanya.com.dataentry.SchoolRegistration" />
+        <activity android:name="dataentry.ochanya.com.dataentry.MarketRegistration" />
+        <activity android:name="dataentry.ochanya.com.dataentry.AdminMobileActivity" />
+        <activity android:name="dataentry.ochanya.com.dataentry.AgentDashboard" />
+        <activity android:name="dataentry.ochanya.com.dataentry.AgentReport" />
+        <activity android:name="dataentry.ochanya.com.dataentry.SimpleReport" />
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
+    </application>
+
+</manifest>
