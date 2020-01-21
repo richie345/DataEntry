@@ -97,18 +97,14 @@ public class MobileAsyn extends AsyncTask<Void, Void, String> {
             subDate.put("nok_number", cursor.getString(cursor.getColumnIndex("nok_number")));
             subDate.put("agent_id", cursor.getString(cursor.getColumnIndex("agent_id")));
             subDate.put("reg_date", cursor.getString(cursor.getColumnIndex("reg_date")));
-                Log.e("about to","1");
                 try {
                     byte[] blob = cursor.getBlob(cursor.getColumnIndex("user_image"));
                     if(blob != null) {
-                        Log.e("blob", "2 " + blob.toString());
                         Bitmap bitmap = BitmapFactory.decodeByteArray(blob, 0, blob.length);
-                        Log.e("bitmap", "3 " + bitmap.toString());
                         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
                         bitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream);
                         byte[] imageBytes = byteArrayOutputStream.toByteArray();
                         String encodedImage = Base64.encodeToString(imageBytes, Base64.DEFAULT);
-                        Log.e("encodedImage ", "encoded " + encodedImage);
                         subDate.put("user_image", encodedImage);
                     }else{
                         continue;
@@ -116,7 +112,6 @@ public class MobileAsyn extends AsyncTask<Void, Void, String> {
                 }catch (Exception e){
                     e.printStackTrace();
                 }
-
             sqlData.add(subDate);
         }
         Gson gson=new GsonBuilder().create();
@@ -155,10 +150,8 @@ public class MobileAsyn extends AsyncTask<Void, Void, String> {
     //Callback function to get json feedback
     private void finalAsync(String json2) throws JSONException {
         JSONObject jobj=new JSONObject(json2);
-
         //Sync result
         String res =jobj.getString("res").toString().trim();
-
         //Agent result
         String a_status=jobj.getString("status").toString().trim();
         String a_designation=jobj.getString("designation").toString().trim();
