@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="dataentry.ochanya.com.dataentry.Cam">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/button"
+            android:textSize="12dp"
+            android:textColor="#D81B60"
+            android:text="Take Picture" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#030"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:textSize="12dp"
+            android:textColor="#D81B60"
+            android:text="Finish" />
+
+    </LinearLayout>

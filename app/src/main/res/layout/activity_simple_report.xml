@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:padding="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        tools:context="dataentry.ochanya.com.dataentry.MarketRegistration">
+
+
+        <LinearLayout
+            android:id="@+id/simple_group_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:padding="20dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/simple_welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="SIMPLE REPORT"
+                android:textColor="#F9EBEB"
+                android:textSize="30sp"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.56"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.016" />
+
+            <LinearLayout
+                android:id="@+id/simple_select_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/simple_dateFrom_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Date From:"
+                    android:textColor="#F9EBEB"
+                    />
+                <LinearLayout
+                    android:id="@+id/simple_dateFrom_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/simple_dateFromPicker"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:padding="10dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/edit_text_top"
+                        android:ems="10" />
+
+                    <ImageView
+                        android:id="@+id/simple_dateImgFrom"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/calender" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/simple_dateTo_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Date To:"
+                    android:textColor="#F9EBEB"
+                    />
+                <LinearLayout
+                    android:id="@+id/simple_dateTo_lay"
+                    android:paddingBottom="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/simple_dateToPicker"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:padding="10dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/edit_text_top"
+                        android:ems="10" />
+
+                    <ImageView
+                        android:id="@+id/simple_dateImgTo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/calender" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/simple_generateBtn"
+                    android:layout_width="269dp"
+                    android:layout_height="47dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/button"
+                    android:ems="10"
+                    android:text="Generate"
+                    android:textColor="#D81B60"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/simple_recycler"
+                android:orientation="vertical"
+                android:paddingTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android" />
+
+            <LinearLayout
+                android:id="@+id/simple_btn_lay"
+                android:visibility="gone"
+                android:paddingTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <Button
+                    android:id="@+id/simple_closeBtn"
+                    android:layout_width="269dp"
+                    android:layout_height="47dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/button"
+                    android:ems="10"
+                    android:text="Exit Report"
+                    android:textColor="#D81B60"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

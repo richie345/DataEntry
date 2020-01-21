@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:padding="5dp"
+    >
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        tools:context="dataentry.ochanya.com.dataentry.MarketRegistration">
+
+
+    <LinearLayout
+        android:id="@+id/input_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="20dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="MARKET REGISTRATION PAGE"
+            android:textColor="#F9EBEB"
+            android:textSize="25sp"
+        />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Fullname"
+            android:textColor="#F9EBEB"
+             />
+
+        <EditText
+            android:id="@+id/editText22"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/edit_text_top"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+             />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Date of Birth"
+            android:textColor="#F9EBEB"
+           />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+        <EditText
+            android:id="@+id/datePicker"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/edit_text_top"
+            android:ems="10" />
+
+            <ImageView
+                android:id="@+id/MR_datepicker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/datePicker"
+                app:srcCompat="@drawable/calender" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Gender"
+            android:textColor="#F9EBEB"
+          />
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:entries="@array/gender"
+            android:background="@drawable/spinner_border"
+         />
+
+
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Shop Number"
+            android:textColor="#F9EBEB"
+        />
+
+
+
+        <EditText
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/edit_text_top"
+            android:ems="10"
+            android:padding="10dp"
+            android:inputType="textPersonName"
+          />
+
+
+
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Type of Business"
+            android:textColor="#F9EBEB"
+           />
+
+        <EditText
+            android:id="@+id/editText26"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/edit_text_top"
+            android:ems="10"
+            android:padding="10dp"
+            android:inputType="textPersonName"
+            />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="BVN"
+            android:textColor="#F9EBEB"
+          />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/edit_text_top"
+            android:ems="10"
+            android:padding="10dp"
+            android:inputType="textPersonName"
+           />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Account Name"
+            android:textColor="#F9EBEB"
+        />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/edit_text_top"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+           />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Account Number"
+            android:textColor="#F9EBEB"
+             />
+
+        <EditText
+            android:id="@+id/editText11"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/edit_text_top"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+           />
+
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Residential Address"
+            android:textColor="#F9EBEB"
+            app:layout_constraintEnd_toEndOf="parent"
+           />
+
+        <EditText
+            android:id="@+id/editText27"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/edit_text_top"
+            android:ems="10"
+            android:padding="10dp"
+            android:inputType="textPersonName"
+             />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Phone Number"
+            android:textColor="#F9EBEB"
+           />
+
+
+        <EditText
+            android:id="@+id/editText25"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/edit_text_top"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+          />
+
+
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Next of Kin"
+            android:textColor="#F9EBEB"
+             />
+
+        <EditText
+            android:id="@+id/editText13"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/edit_text_top"
+            android:ems="10"
+            android:padding="10dp"
+            android:inputType="textPersonName"
+           />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Next of Kin Phone Number"
+            android:textColor="#F9EBEB"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <EditText
+            android:id="@+id/editText16"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/edit_text_top"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+           />
+
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Email Address"
+            android:textColor="#F9EBEB"
+             />
+
+        <EditText
+            android:id="@+id/editText17"
+            android:background="@drawable/edit_text_top"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:padding="10dp"
+            android:inputType="textEmailAddress"
+           />
+
+
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Disability status"
+            android:textColor="#F9EBEB"
+             />
+
+        <Spinner
+            android:id="@+id/spinner4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:entries="@array/disability_status"
+            android:background="@drawable/spinner_border"
+             />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="166dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/button"
+            android:text="Submit"
+            android:textColor="#D81B60"
+           />
+
+
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
