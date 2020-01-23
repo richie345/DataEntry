@@ -6,12 +6,15 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -26,16 +29,25 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 public class AgentDashboard extends AppCompatActivity {
     private Button schl_btn, mkt_btn, rpt_btn, syncBtn, logout;
-    private TextView welcomeMSG;
+    private TextView welcomeMSG, total, today;
     private String uid, role, designation, desig_id;
+    private SQLiteOpenHelper openHelper;
+    private SQLiteDatabase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agent_dashboard);
+
+        openHelper=new SQLDBHelper(AgentDashboard.this);
+        db=openHelper.getReadableDatabase();
 
         //get all intent values
         Intent in=getIntent();
@@ -44,6 +56,38 @@ public class AgentDashboard extends AppCompatActivity {
         designation=in.getStringExtra("des");
         desig_id=in.getStringExtra("did");
 
+        int total_count = 0;
+        int today_count = 0;
+        total = (TextView) findViewById(R.id.total);
+        today = (TextView) findViewById(R.id.today);
+
+        Calendar now = Calendar.getInstance();
+        //String currentdate = now.get(Calendar.YEAR) + "-"
+               // + (now.get(Calendar.MONTH) + 1) + "-" + now.get(Calendar.DATE);
+        String currentdate = currDate();
+        String[] args={
+                uid,
+                currentdate
+        };
+        Cursor cursor=db.rawQuery(String.format("select * from %s where agent_id=? and reg_date=?", SQLDBHelper.USER_TABLE),args);
+        int cursor_count=cursor.getCount();
+        if(cursor_count>0) {
+            while (cursor.moveToNext()) {
+                today_count++;
+            }
+        }
+        today.setText(""+today_count);
+        String[] args1={
+                uid
+        };
+        Cursor c=db.rawQuery(String.format("select * from %s where agent_id=?", SQLDBHelper.USER_TABLE),args1);
+        int c_count=c.getCount();
+        if(c_count>0) {
+            while (c.moveToNext()) {
+                total_count++;
+            }
+        }
+        total.setText(""+total_count);
         //set app title
         //getSupportActionBar().setTitle("m");
 
@@ -230,4 +274,11 @@ public class AgentDashboard extends AppCompatActivity {
         backBuilder.setNegativeButton("No", null);
         backBuilder.show();
     }
+
+    public String currDate() {
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = new Date();
+        return dateFormat.format(date);
+    }
+
 }
