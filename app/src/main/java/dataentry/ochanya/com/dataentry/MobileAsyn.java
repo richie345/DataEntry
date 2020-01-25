@@ -97,6 +97,7 @@ public class MobileAsyn extends AsyncTask<Void, Void, String> {
             subDate.put("nok_number", cursor.getString(cursor.getColumnIndex("nok_number")));
             subDate.put("agent_id", cursor.getString(cursor.getColumnIndex("agent_id")));
             subDate.put("reg_date", cursor.getString(cursor.getColumnIndex("reg_date")));
+            subDate.put("role", cursor.getString(cursor.getColumnIndex("role")));
                 try {
                     byte[] blob = cursor.getBlob(cursor.getColumnIndex("user_image"));
                     if(blob != null) {
@@ -185,7 +186,8 @@ public class MobileAsyn extends AsyncTask<Void, Void, String> {
                                     jobj_users2.getString("acct_name"), jobj_users2.getString("acct_number"),
                                     jobj_users2.getString("business_type"), jobj_users2.getString("nok_name"),
                                     jobj_users2.getString("nok_number"), jobj_users2.getString("agent_id"),
-                                    jobj_users2.getString("reg_date"), jobj_users2.getString("user_image"));
+                                    jobj_users2.getString("reg_date"), jobj_users2.getString("user_image"),
+                                    jobj_users2.getString("role"));
                         }
                     }
                     Toast.makeText(applicationContext, " Data Synchronized successfully!", Toast.LENGTH_LONG).show();
@@ -221,7 +223,8 @@ public class MobileAsyn extends AsyncTask<Void, Void, String> {
                             jobj_users2.getString("acct_name"), jobj_users2.getString("acct_number"),
                             jobj_users2.getString("business_type"), jobj_users2.getString("nok_name"),
                             jobj_users2.getString("nok_number"), jobj_users2.getString("agent_id"),
-                            jobj_users2.getString("reg_date"), jobj_users2.getString("user_image"));
+                            jobj_users2.getString("reg_date"), jobj_users2.getString("user_image"),
+                            jobj_users2.getString("role"));
                 }
             }
                 Toast.makeText(applicationContext, " No data to synchronize from local!", Toast.LENGTH_LONG).show();
@@ -264,7 +267,7 @@ public class MobileAsyn extends AsyncTask<Void, Void, String> {
                              String parent_guide_name, String parent_guide_phone, String dob,
                              String phone, String shop_number, String address, String bvn,
                              String acct_name, String acct_number, String business_type,
-                             String nok_name, String nok_number, String agent_id, String reg_date, String user_image){
+                             String nok_name, String nok_number, String agent_id, String reg_date, String user_image, String role){
         ContentValues cv=new ContentValues();
         //cv.put("user_id",user_id);
         cv.put("designation_id",designation_id);
@@ -288,6 +291,7 @@ public class MobileAsyn extends AsyncTask<Void, Void, String> {
         cv.put("agent_id", agent_id);
         cv.put("reg_date", reg_date);
         cv.put("user_image", user_image);
+        cv.put("role", role);
 
         //save user details
         int outcome=(int) db.insert(SQLDBHelper.USER_TABLE, null, cv);
