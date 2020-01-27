@@ -20,8 +20,11 @@ public class SQLDBHelper extends SQLiteOpenHelper {
 
     String createLogin="create table login(username TEXT PRIMARY KEY, password TEXT, role TEXT, status TEXT, designation TEXT, designation_id TEXT)";
 
+    String createSync="create table sync(serial TEXT PRIMARY KEY, sync_date TEXT, status TEXT)";
+
     public static String USER_TABLE="users";
     public static String USER_LOGIN="login";
+    public static String USER_SYNC="sync";
 
     public SQLDBHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -32,12 +35,14 @@ public class SQLDBHelper extends SQLiteOpenHelper {
         db=sqLiteDatabase;
         sqLiteDatabase.execSQL(createUsers);
         sqLiteDatabase.execSQL(createLogin);
+        sqLiteDatabase.execSQL(createSync);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
         sqLiteDatabase.execSQL("drop table " + USER_TABLE);
         sqLiteDatabase.execSQL("drop table" + USER_LOGIN);
+        sqLiteDatabase.execSQL("drop table" + USER_SYNC);
         onCreate(sqLiteDatabase);
     }
 }

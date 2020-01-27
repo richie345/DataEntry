@@ -11,6 +11,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
+import android.os.Looper;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -33,6 +34,8 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class AgentDashboard extends AppCompatActivity {
     private Button schl_btn, mkt_btn, rpt_btn, syncBtn, logout;
@@ -191,74 +194,6 @@ public class AgentDashboard extends AppCompatActivity {
         NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
-
-    /**
-    private void ConfirmAgentPermit(final String urlWebService) {
-        class DownloadJSON extends AsyncTask<Void, Void, String> {
-            @Override
-            protected void onPreExecute() {
-                super.onPreExecute();
-            }
-            @Override
-            protected void onPostExecute(String s) {
-                super.onPostExecute(s);
-                try {
-                    PerformAction(s);
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-
-            @Override
-            protected String doInBackground(Void... voids) {
-                try {
-                    //Set values for post
-                    String data  = URLEncoder.encode("uid", "UTF-8") + "=" +
-                            URLEncoder.encode(uid, "UTF-8");
-
-                    //create connection using URL site link passed when calling method
-                    URL url = new URL(urlWebService);
-                    HttpURLConnection con = (HttpURLConnection) url.openConnection();
-
-                    //write data into open connection
-                    con.setDoOutput(true);
-                    OutputStreamWriter wr = new OutputStreamWriter(con.getOutputStream());
-                    wr.write( data );
-                    wr.flush();
-
-                    StringBuilder sb = new StringBuilder();
-                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(con.getInputStream()));
-                    String json;
-                    while ((json = bufferedReader.readLine()) != null) {
-                        sb.append(json + "\n");
-                    }
-                    con.disconnect();
-                    return sb.toString().trim();
-                } catch (Exception e) {
-                    return null;
-                }
-            }
-        }
-        DownloadJSON getJSON = new DownloadJSON();
-        getJSON.execute();
-    }
-
-    //Perform action after checking if agent is permitted to synchronize data
-    private void PerformAction(String json) throws JSONException {
-        JSONObject jobj=new JSONObject(json);
-        String res =jobj.getString("res").toString().trim();
-
-        if(res.equalsIgnoreCase("true")){
-            MobileAsyn ma=new MobileAsyn(AgentDashboard.this, uid);
-            ma.execute();
-        }else{
-            //Toast.makeText(AgentDashboard.this, "Data Synchronization failed due to improper permission. Contact administrator if you think this is an error!", Toast.LENGTH_LONG).show();
-            AlertDialog.Builder error_alert=new AlertDialog.Builder(AgentDashboard.this);
-            error_alert.setTitle("Synchronization Failed");
-            error_alert.setMessage("Data Synchronization failed due to not enough permission. Contact administrator if you think this is an error!");
-        }
-
-    }**/
 
     @Override
     public void onBackPressed() {

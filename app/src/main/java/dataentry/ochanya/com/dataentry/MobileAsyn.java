@@ -269,7 +269,7 @@ public class MobileAsyn extends AsyncTask<Void, Void, String> {
                              String acct_name, String acct_number, String business_type,
                              String nok_name, String nok_number, String agent_id, String reg_date, String user_image, String role){
         ContentValues cv=new ContentValues();
-        //cv.put("user_id",user_id);
+        cv.put("user_id",user_id);
         cv.put("designation_id",designation_id);
         cv.put("designation_type",designation_type);
         cv.put("class",uclass);
@@ -295,5 +295,10 @@ public class MobileAsyn extends AsyncTask<Void, Void, String> {
 
         //save user details
         int outcome=(int) db.insert(SQLDBHelper.USER_TABLE, null, cv);
+    }
+
+    //Update Sync Table
+    private void updateSync(){
+
     }
 }
