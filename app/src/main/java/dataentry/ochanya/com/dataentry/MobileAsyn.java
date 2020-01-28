@@ -190,7 +190,7 @@ public class MobileAsyn extends AsyncTask<Void, Void, String> {
                                     jobj_users2.getString("role"));
                         }
                     }
-                    Toast.makeText(applicationContext, " Data Synchronized successfully!", Toast.LENGTH_LONG).show();
+                    //Toast.makeText(applicationContext, " Data Synchronized successfully!", Toast.LENGTH_LONG).show();
                 }else{
                     Toast.makeText(applicationContext, " No Data to Synchronize from remote server! ", Toast.LENGTH_LONG).show();
                     Toast.makeText(applicationContext, " Data from local server Synchronized successfully!", Toast.LENGTH_LONG).show();

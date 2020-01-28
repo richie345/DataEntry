@@ -14,6 +14,8 @@
     <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/> -->
+    <uses-permission android:name="android.permission.SET_ALARM" />
 
     <application
         android:allowBackup="true"
@@ -38,6 +40,8 @@
         <activity android:name="dataentry.ochanya.com.dataentry.AgentReport" />
         <activity android:name="dataentry.ochanya.com.dataentry.SimpleReport" />
         <activity android:name="dataentry.ochanya.com.dataentry.Cam" />
+
+        <receiver android:name="dataentry.ochanya.com.dataentry.AlarmReciever" />
 
         <meta-data
             android:name="android.support.VERSION"
