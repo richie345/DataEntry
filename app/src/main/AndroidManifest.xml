@@ -8,6 +8,8 @@
     <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--<uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>-->
+    <uses-permission android:name="android.permission.SET_ALARM"/>
 
     <application
         android:allowBackup="true"
@@ -30,6 +32,7 @@
         <activity android:name=".AgentReport" />
         <activity android:name=".SimpleReport" />
         <activity android:name=".Cam"></activity>
+        <receiver android:name=".AlarmReciever"/>
     </application>
 
 </manifest>

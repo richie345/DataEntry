@@ -10,11 +10,13 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.DateFormat;
@@ -28,8 +30,9 @@ public class SchoolRegistration extends AppCompatActivity implements DatePickerD
 
     private String uid, role, designation, desig_id;
     private EditText fullname, uclass, phone, email, pg_name, pg_phone;
-    private Spinner gender, disability;
+    private Spinner gender, disability, urole;
     private EditText dob;
+    private TextView hide_tv;
     private Button reg;
     private ImageView setdateSR;
     private String PAGENAME = "SCHOOL";
@@ -48,11 +51,13 @@ public class SchoolRegistration extends AppCompatActivity implements DatePickerD
 
         fullname=(EditText) findViewById(R.id.editText22);
         uclass=(EditText) findViewById(R.id.editText25);
+        hide_tv=(TextView) findViewById(R.id.textView3);
         phone=(EditText) findViewById(R.id.editText7);
         email=(EditText) findViewById(R.id.editText8);
         pg_name=(EditText) findViewById(R.id.editText26);
         pg_phone=(EditText) findViewById(R.id.editText27);
         gender=(Spinner) findViewById(R.id.spinner5);
+        urole=(Spinner)  findViewById(R.id.spinner5b);
         disability=(Spinner) findViewById(R.id.spinner2);
         dob=(EditText) findViewById(R.id.datePicker);
         reg=(Button) findViewById(R.id.button2);
@@ -73,6 +78,28 @@ public class SchoolRegistration extends AppCompatActivity implements DatePickerD
         openhelper=new SQLDBHelper(SchoolRegistration.this);
         db=openhelper.getWritableDatabase();
 
+        //click of role
+        urole.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                if(i==1){
+                    uclass.setText("nul");
+                    uclass.setVisibility(View.GONE);
+                    hide_tv.setVisibility(View.GONE);
+                }else{
+                    uclass.setText("");
+                    uclass.setVisibility(View.VISIBLE);
+                    hide_tv.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
+        //register school
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -85,10 +112,12 @@ public class SchoolRegistration extends AppCompatActivity implements DatePickerD
                 String gender_val=gender.getSelectedItem().toString();
                 String disability_val= disability.getSelectedItem().toString();
                 String dob_val=dob.getText().toString();
+                String urole_val=urole.getSelectedItem().toString();
 
                 if(!fullname_val.equals("") && !uclass_val.equals("") && !phone_val.equals("") &&
                         !email_val.equals("") && !pg_name_val.equals("") && !pg_phone_val.equals("")
-                        && !gender_val.equals("") && !disability_val.equals("") && !dob_val.equals("")){
+                        && !gender_val.equals("") && !disability_val.equals("") && !dob_val.equals("")
+                        && !urole_val.equals("")){
 
                     //get registration date
                     Date date=new Date();
@@ -117,6 +146,7 @@ public class SchoolRegistration extends AppCompatActivity implements DatePickerD
                     groupedValues.put("nok_number", "");
                     groupedValues.put("agent_id", uid);
                     groupedValues.put("reg_date", reg_date);
+                    groupedValues.put("role", urole_val);
 
                     int res=(int) db.insert(SQLDBHelper.USER_TABLE, null, groupedValues);
 

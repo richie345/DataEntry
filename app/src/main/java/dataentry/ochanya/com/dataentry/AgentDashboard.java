@@ -1,5 +1,7 @@
 package dataentry.ochanya.com.dataentry;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.app.ProgressDialog;
 import android.content.ContentValues;
 import android.content.Context;
@@ -11,6 +13,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
+import android.os.Looper;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -33,6 +36,9 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class AgentDashboard extends AppCompatActivity {
     private Button schl_btn, mkt_btn, rpt_btn, syncBtn, logout;
@@ -55,6 +61,9 @@ public class AgentDashboard extends AppCompatActivity {
         role=in.getStringExtra("role");
         designation=in.getStringExtra("des");
         desig_id=in.getStringExtra("did");
+
+        //calling schedule
+        scheduleAlarm(uid);
 
         int total_count = 0;
         int today_count = 0;
@@ -192,74 +201,6 @@ public class AgentDashboard extends AppCompatActivity {
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 
-    /**
-    private void ConfirmAgentPermit(final String urlWebService) {
-        class DownloadJSON extends AsyncTask<Void, Void, String> {
-            @Override
-            protected void onPreExecute() {
-                super.onPreExecute();
-            }
-            @Override
-            protected void onPostExecute(String s) {
-                super.onPostExecute(s);
-                try {
-                    PerformAction(s);
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-
-            @Override
-            protected String doInBackground(Void... voids) {
-                try {
-                    //Set values for post
-                    String data  = URLEncoder.encode("uid", "UTF-8") + "=" +
-                            URLEncoder.encode(uid, "UTF-8");
-
-                    //create connection using URL site link passed when calling method
-                    URL url = new URL(urlWebService);
-                    HttpURLConnection con = (HttpURLConnection) url.openConnection();
-
-                    //write data into open connection
-                    con.setDoOutput(true);
-                    OutputStreamWriter wr = new OutputStreamWriter(con.getOutputStream());
-                    wr.write( data );
-                    wr.flush();
-
-                    StringBuilder sb = new StringBuilder();
-                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(con.getInputStream()));
-                    String json;
-                    while ((json = bufferedReader.readLine()) != null) {
-                        sb.append(json + "\n");
-                    }
-                    con.disconnect();
-                    return sb.toString().trim();
-                } catch (Exception e) {
-                    return null;
-                }
-            }
-        }
-        DownloadJSON getJSON = new DownloadJSON();
-        getJSON.execute();
-    }
-
-    //Perform action after checking if agent is permitted to synchronize data
-    private void PerformAction(String json) throws JSONException {
-        JSONObject jobj=new JSONObject(json);
-        String res =jobj.getString("res").toString().trim();
-
-        if(res.equalsIgnoreCase("true")){
-            MobileAsyn ma=new MobileAsyn(AgentDashboard.this, uid);
-            ma.execute();
-        }else{
-            //Toast.makeText(AgentDashboard.this, "Data Synchronization failed due to improper permission. Contact administrator if you think this is an error!", Toast.LENGTH_LONG).show();
-            AlertDialog.Builder error_alert=new AlertDialog.Builder(AgentDashboard.this);
-            error_alert.setTitle("Synchronization Failed");
-            error_alert.setMessage("Data Synchronization failed due to not enough permission. Contact administrator if you think this is an error!");
-        }
-
-    }**/
-
     @Override
     public void onBackPressed() {
         AlertDialog.Builder backBuilder=new AlertDialog.Builder(AgentDashboard.this);
@@ -279,6 +220,30 @@ public class AgentDashboard extends AppCompatActivity {
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         Date date = new Date();
         return dateFormat.format(date);
+    }
+
+    public void scheduleAlarm(String uid)
+    {
+        // time at which alarm will be scheduled here alarm is scheduled at 1 day from current time,
+        // we fetch  the current time in milliseconds and added 1 day time
+        // i.e. 24*60*60*1000= 86,400,000   milliseconds in a day
+        Long time = new GregorianCalendar().getTimeInMillis() + 60*60*1000;
+
+        // create an Intent and set the class which will execute when Alarm triggers, here we have
+        // given AlarmReciever in the Intent, the onRecieve() method of this class will execute when
+        // alarm triggers and
+        //we call the method inside onRecieve() method pf Alarmreciever class
+        Intent intentAlarm = new Intent(this, AlarmReciever.class);
+        intentAlarm.putExtra("uid", uid);
+        sendBroadcast(intentAlarm);
+
+        // create the object
+        AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+
+        //set the alarm for particular time
+        alarmManager.set(AlarmManager.RTC_WAKEUP,time, PendingIntent.getBroadcast(this,1,  intentAlarm, PendingIntent.FLAG_UPDATE_CURRENT));
+        Log.i("Alarm Check: ","Alarm Scheduled");
+
     }
 
 }
