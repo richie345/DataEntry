@@ -11,7 +11,7 @@
     </string-array>
     <string-array name="role">
         <item>Student</item>
-        <item>Teacher</item>
+        <item>Staff</item>
     </string-array>
     <string name="large_text">
         "Material is the metaphor.\n\n"

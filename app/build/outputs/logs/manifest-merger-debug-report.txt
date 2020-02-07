@@ -1,37 +1,55 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:2:1-38:12
-MERGED from [com.android.support:design:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\fefea6391822d43ee43bbd3cc067e724\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\974ac44559cc58a5039b2235d03b3c32\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2524dd870d0a32308e79683d4bb674cd\AndroidManifest.xml:17:1-31:12
+ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:2:1-41:12
+MERGED from [com.android.support:design:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\628b4c6246f4c74c8b4a459c2112fabe\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\3192ddd4773567d2bd554fef6cf13d06\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.Ikhiloya:NigeriaStatesAndLGAs:0.1.1] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\NigeriaStatesAndLGAs-0.1.1.aar\9c5328c85da41122b7237f7aafa1a1e4\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\34ba6ea9b78dd80b17b9caaf0859a50b\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e5a3b708863b1c1b9b0737be8c9bd238\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\d1b28dca3fe0b8993c009f596f665e5b\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\562a13e0ebf4659b048145cc8bd5d4ab\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:transition:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\48f9ac78073415072f203b3cb180d2ec\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\3a1b7e820020fc063ef3ad8063555db3\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\3892d568c186e46acdaac7d3997287b8\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\f8b2963bc98cd1bcdac130f7a172f2d7\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\ec80c7a8d465e61d83704ee032e9af60\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\9d59807bf12a34f67601c1d3a4e29b8a\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\9904a4e5656cac34c03a373fa3380495\AndroidManifest.xml:17:1-31:12
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\cb988ad86a27dbc371420d94846609a1\AndroidManifest.xml:17:1-30:12
-INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:2:1-38:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\9979ec97a80346e8d5a71876f2ba05e0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\106de0fe3b81703c4b149a880d016bdc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\83b3d821f7158c4a8fcad2da3bf7edaf\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\4e8981405bc4606e368995c2e14a3f98\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\9676a1d25c527848fc60ba590366eb89\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\5dda715e9b55b69cc7567536249add12\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\5de3db38c3ed0fba33c772b64e94e219\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\6bc46bd47ae242a7878046f0fd1416e8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\f7fd071a491affae3ee4e6fd0ffa74f4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\59aa5d845dfee412391ebfcdf0a6fce3\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\b9bc82853231f5c9c274228daa3c895e\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\4dba75b26a9cd9d38080539d13aa5ba3\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\21c80d3db423c9eef0f5db24ac43af0c\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\653753c3da3efa2dd473cd70deee11e0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\45e501182aa904864249d961d51392c2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\b03953180a6ff6e5e0a40f3c69a95b30\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\9241498db01b4c2da840489ba8107593\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\817d45313a8ec2f386af2c541486659f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\ba1f2af29e29a87ea94e02888a4540b5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\5c0a140ef27b392ce514f78dd411afdf\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\83373ce57776b6bca1e5070037711a9c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\a947c2ba98ceef81088e54dfc565f611\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\c68e072e03b7699d68c2cae7d0c22019\AndroidManifest.xml:17:1-24:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\7f315567dee404751ce3f6419033d080\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\c772a77c2964b5cec507c0a1f58f6c66\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\5419ef4f5ff1b0767867a6051dfc882d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\749a2b70bb9081dea5e225afeff912db\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:2:1-41:12
 	package
 		ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:3:5-46
 		INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:2:1-38:12
+		ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:2:1-41:12
 		INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:2:1-38:12
+		ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:2:1-41:12
 		INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:2:11-69
@@ -60,39 +78,21 @@ ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidM
 	android:name
 		ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:10:22-78
 uses-permission#android.permission.SET_ALARM
-ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:12:5-67
+ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:12:5-68
 	android:name
 		ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:12:22-65
 application
-ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:14:5-36:19
-MERGED from [com.android.support:design:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\fefea6391822d43ee43bbd3cc067e724\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:design:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\fefea6391822d43ee43bbd3cc067e724\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\974ac44559cc58a5039b2235d03b3c32\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\974ac44559cc58a5039b2235d03b3c32\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2524dd870d0a32308e79683d4bb674cd\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2524dd870d0a32308e79683d4bb674cd\AndroidManifest.xml:25:5-29:19
+ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:14:5-39:19
+MERGED from [com.android.support:design:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\628b4c6246f4c74c8b4a459c2112fabe\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\628b4c6246f4c74c8b4a459c2112fabe\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e5a3b708863b1c1b9b0737be8c9bd238\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e5a3b708863b1c1b9b0737be8c9bd238\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\d1b28dca3fe0b8993c009f596f665e5b\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\d1b28dca3fe0b8993c009f596f665e5b\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\562a13e0ebf4659b048145cc8bd5d4ab\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\562a13e0ebf4659b048145cc8bd5d4ab\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:transition:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\48f9ac78073415072f203b3cb180d2ec\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:transition:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\48f9ac78073415072f203b3cb180d2ec\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\3a1b7e820020fc063ef3ad8063555db3\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\3a1b7e820020fc063ef3ad8063555db3\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\3892d568c186e46acdaac7d3997287b8\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\3892d568c186e46acdaac7d3997287b8\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\f8b2963bc98cd1bcdac130f7a172f2d7\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\f8b2963bc98cd1bcdac130f7a172f2d7\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\ec80c7a8d465e61d83704ee032e9af60\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\ec80c7a8d465e61d83704ee032e9af60\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\9d59807bf12a34f67601c1d3a4e29b8a\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\9d59807bf12a34f67601c1d3a4e29b8a\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\9904a4e5656cac34c03a373fa3380495\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\9904a4e5656cac34c03a373fa3380495\AndroidManifest.xml:25:5-29:19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\cb988ad86a27dbc371420d94846609a1\AndroidManifest.xml:24:5-28:19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\cb988ad86a27dbc371420d94846609a1\AndroidManifest.xml:24:5-28:19
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\c68e072e03b7699d68c2cae7d0c22019\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\c68e072e03b7699d68c2cae7d0c22019\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\c772a77c2964b5cec507c0a1f58f6c66\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\c772a77c2964b5cec507c0a1f58f6c66\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\c68e072e03b7699d68c2cae7d0c22019\AndroidManifest.xml:22:18-91
 	android:supportsRtl
 		ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:19:9-35
 	android:label
@@ -144,49 +144,87 @@ ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidM
 	android:name
 		ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:33:19-47
 activity#dataentry.ochanya.com.dataentry.Cam
-ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:34:9-50
+ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:34:9-41
 	android:name
 		ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:34:19-38
 receiver#dataentry.ochanya.com.dataentry.AlarmReciever
-ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:35:9-50
+ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:36:9-51
 	android:name
-		ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:35:19-48
+		ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:36:19-48
+activity#dataentry.ochanya.com.dataentry.SendMessage
+ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:38:9-58
+	android:name
+		ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml:38:19-46
 uses-sdk
 INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:design:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\fefea6391822d43ee43bbd3cc067e724\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:design:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\fefea6391822d43ee43bbd3cc067e724\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\974ac44559cc58a5039b2235d03b3c32\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\974ac44559cc58a5039b2235d03b3c32\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2524dd870d0a32308e79683d4bb674cd\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2524dd870d0a32308e79683d4bb674cd\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:design:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\628b4c6246f4c74c8b4a459c2112fabe\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\628b4c6246f4c74c8b4a459c2112fabe\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\3192ddd4773567d2bd554fef6cf13d06\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\3192ddd4773567d2bd554fef6cf13d06\AndroidManifest.xml:20:5-44
+MERGED from [com.github.Ikhiloya:NigeriaStatesAndLGAs:0.1.1] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\NigeriaStatesAndLGAs-0.1.1.aar\9c5328c85da41122b7237f7aafa1a1e4\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.Ikhiloya:NigeriaStatesAndLGAs:0.1.1] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\NigeriaStatesAndLGAs-0.1.1.aar\9c5328c85da41122b7237f7aafa1a1e4\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\34ba6ea9b78dd80b17b9caaf0859a50b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\34ba6ea9b78dd80b17b9caaf0859a50b\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e5a3b708863b1c1b9b0737be8c9bd238\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e5a3b708863b1c1b9b0737be8c9bd238\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\d1b28dca3fe0b8993c009f596f665e5b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\d1b28dca3fe0b8993c009f596f665e5b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\562a13e0ebf4659b048145cc8bd5d4ab\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\562a13e0ebf4659b048145cc8bd5d4ab\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\48f9ac78073415072f203b3cb180d2ec\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\48f9ac78073415072f203b3cb180d2ec\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\3a1b7e820020fc063ef3ad8063555db3\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\3a1b7e820020fc063ef3ad8063555db3\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\3892d568c186e46acdaac7d3997287b8\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\3892d568c186e46acdaac7d3997287b8\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\f8b2963bc98cd1bcdac130f7a172f2d7\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\f8b2963bc98cd1bcdac130f7a172f2d7\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\ec80c7a8d465e61d83704ee032e9af60\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\ec80c7a8d465e61d83704ee032e9af60\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\9d59807bf12a34f67601c1d3a4e29b8a\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\9d59807bf12a34f67601c1d3a4e29b8a\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\9904a4e5656cac34c03a373fa3380495\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\9904a4e5656cac34c03a373fa3380495\AndroidManifest.xml:21:5-23:58
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\cb988ad86a27dbc371420d94846609a1\AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\cb988ad86a27dbc371420d94846609a1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\9979ec97a80346e8d5a71876f2ba05e0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\9979ec97a80346e8d5a71876f2ba05e0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\106de0fe3b81703c4b149a880d016bdc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\106de0fe3b81703c4b149a880d016bdc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\83b3d821f7158c4a8fcad2da3bf7edaf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\83b3d821f7158c4a8fcad2da3bf7edaf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\4e8981405bc4606e368995c2e14a3f98\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\4e8981405bc4606e368995c2e14a3f98\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\9676a1d25c527848fc60ba590366eb89\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\9676a1d25c527848fc60ba590366eb89\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\5dda715e9b55b69cc7567536249add12\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\5dda715e9b55b69cc7567536249add12\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\5de3db38c3ed0fba33c772b64e94e219\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\5de3db38c3ed0fba33c772b64e94e219\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\6bc46bd47ae242a7878046f0fd1416e8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\6bc46bd47ae242a7878046f0fd1416e8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\f7fd071a491affae3ee4e6fd0ffa74f4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\f7fd071a491affae3ee4e6fd0ffa74f4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\59aa5d845dfee412391ebfcdf0a6fce3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\59aa5d845dfee412391ebfcdf0a6fce3\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\b9bc82853231f5c9c274228daa3c895e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\b9bc82853231f5c9c274228daa3c895e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\4dba75b26a9cd9d38080539d13aa5ba3\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\4dba75b26a9cd9d38080539d13aa5ba3\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\21c80d3db423c9eef0f5db24ac43af0c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\21c80d3db423c9eef0f5db24ac43af0c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\653753c3da3efa2dd473cd70deee11e0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\653753c3da3efa2dd473cd70deee11e0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\45e501182aa904864249d961d51392c2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\45e501182aa904864249d961d51392c2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\b03953180a6ff6e5e0a40f3c69a95b30\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\b03953180a6ff6e5e0a40f3c69a95b30\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\9241498db01b4c2da840489ba8107593\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\9241498db01b4c2da840489ba8107593\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\817d45313a8ec2f386af2c541486659f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\817d45313a8ec2f386af2c541486659f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\ba1f2af29e29a87ea94e02888a4540b5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\ba1f2af29e29a87ea94e02888a4540b5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\5c0a140ef27b392ce514f78dd411afdf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\5c0a140ef27b392ce514f78dd411afdf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\83373ce57776b6bca1e5070037711a9c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\83373ce57776b6bca1e5070037711a9c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\a947c2ba98ceef81088e54dfc565f611\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\a947c2ba98ceef81088e54dfc565f611\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\c68e072e03b7699d68c2cae7d0c22019\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\c68e072e03b7699d68c2cae7d0c22019\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\7f315567dee404751ce3f6419033d080\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\7f315567dee404751ce3f6419033d080\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\c772a77c2964b5cec507c0a1f58f6c66\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\c772a77c2964b5cec507c0a1f58f6c66\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\5419ef4f5ff1b0767867a6051dfc882d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\5419ef4f5ff1b0767867a6051dfc882d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\749a2b70bb9081dea5e225afeff912db\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\749a2b70bb9081dea5e225afeff912db\AndroidManifest.xml:20:5-44
 INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml
-	tools:overrideLibrary
-		ADDED from [com.android.support:design:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\fefea6391822d43ee43bbd3cc067e724\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
 		INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml
@@ -195,37 +233,3 @@ INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\Andro
 		INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\EMOCHE\AndroidStudioProjects\DataEntry\app\src\main\AndroidManifest.xml
-meta-data#android.support.VERSION
-ADDED from [com.android.support:design:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\fefea6391822d43ee43bbd3cc067e724\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\974ac44559cc58a5039b2235d03b3c32\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\974ac44559cc58a5039b2235d03b3c32\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2524dd870d0a32308e79683d4bb674cd\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2524dd870d0a32308e79683d4bb674cd\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\d1b28dca3fe0b8993c009f596f665e5b\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\d1b28dca3fe0b8993c009f596f665e5b\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\562a13e0ebf4659b048145cc8bd5d4ab\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\562a13e0ebf4659b048145cc8bd5d4ab\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:transition:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\48f9ac78073415072f203b3cb180d2ec\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:transition:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\48f9ac78073415072f203b3cb180d2ec\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\3a1b7e820020fc063ef3ad8063555db3\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\3a1b7e820020fc063ef3ad8063555db3\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\3892d568c186e46acdaac7d3997287b8\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\3892d568c186e46acdaac7d3997287b8\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\f8b2963bc98cd1bcdac130f7a172f2d7\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\f8b2963bc98cd1bcdac130f7a172f2d7\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\ec80c7a8d465e61d83704ee032e9af60\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\ec80c7a8d465e61d83704ee032e9af60\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\9d59807bf12a34f67601c1d3a4e29b8a\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\9d59807bf12a34f67601c1d3a4e29b8a\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\9904a4e5656cac34c03a373fa3380495\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\9904a4e5656cac34c03a373fa3380495\AndroidManifest.xml:26:9-28:38
-	android:value
-		ADDED from [com.android.support:design:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\fefea6391822d43ee43bbd3cc067e724\AndroidManifest.xml:28:13-35
-	android:name
-		ADDED from [com.android.support:design:26.1.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\fefea6391822d43ee43bbd3cc067e724\AndroidManifest.xml:27:13-51
-meta-data#android.arch.lifecycle.VERSION
-ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\cb988ad86a27dbc371420d94846609a1\AndroidManifest.xml:25:9-27:47
-	android:value
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\cb988ad86a27dbc371420d94846609a1\AndroidManifest.xml:27:13-44
-	android:name
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\EMOCHE\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\cb988ad86a27dbc371420d94846609a1\AndroidManifest.xml:26:13-58

@@ -41,7 +41,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class AgentDashboard extends AppCompatActivity {
-    private Button schl_btn, mkt_btn, rpt_btn, syncBtn, logout;
+    private Button schl_btn, mkt_btn, rpt_btn, syncBtn, msgBtn, logout;
     private TextView welcomeMSG, total, today;
     private String uid, role, designation, desig_id;
     private SQLiteOpenHelper openHelper;
@@ -105,6 +105,7 @@ public class AgentDashboard extends AppCompatActivity {
         rpt_btn=(Button) findViewById(R.id.ad_report);
         syncBtn=(Button) findViewById(R.id.ad_syncBtn);
         welcomeMSG=(TextView) findViewById(R.id.ad_welcome);
+        msgBtn = (Button) findViewById(R.id.ad_msgBtn);
         logout=(Button) findViewById(R.id.ad_logout);
 
         //Check designation to display
@@ -135,6 +136,19 @@ public class AgentDashboard extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent in2=new Intent(AgentDashboard.this, SchoolRegistration.class);
+                in2.putExtra("uid", uid);
+                in2.putExtra("role", role);
+                in2.putExtra("des", designation);
+                in2.putExtra("did", desig_id);
+                startActivity(in2);
+            }
+        });
+
+        //Set onclick for msg button
+        msgBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in2=new Intent(AgentDashboard.this, SendMessage.class);
                 in2.putExtra("uid", uid);
                 in2.putExtra("role", role);
                 in2.putExtra("des", designation);

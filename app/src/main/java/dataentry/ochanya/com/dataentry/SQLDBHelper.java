@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 
 public class SQLDBHelper extends SQLiteOpenHelper {
-    private static String DATABASE_NAME="dataentrydb.db";
+    private static String DATABASE_NAME="dataentry2.db";
     private static int DATABASE_VERSION=1;
     private SQLiteDatabase db;
 
@@ -22,9 +22,13 @@ public class SQLDBHelper extends SQLiteOpenHelper {
 
     String createSync="create table sync(serial TEXT PRIMARY KEY, sync_date TEXT, status TEXT)";
 
+    String createMessages="create table messages(sn INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT, message TEXT, " +
+            "sender TEXT, receiver TEXT, datet TIMESTAMP, readstatus TEXT, solvedstatus TEXT, msgstatus TEXT)";
+
     public static String USER_TABLE="users";
     public static String USER_LOGIN="login";
     public static String USER_SYNC="sync";
+    public static String MESSAGES="messages";
 
     public SQLDBHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -36,6 +40,7 @@ public class SQLDBHelper extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL(createUsers);
         sqLiteDatabase.execSQL(createLogin);
         sqLiteDatabase.execSQL(createSync);
+        sqLiteDatabase.execSQL(createMessages);
     }
 
     @Override
@@ -43,6 +48,7 @@ public class SQLDBHelper extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL("drop table " + USER_TABLE);
         sqLiteDatabase.execSQL("drop table" + USER_LOGIN);
         sqLiteDatabase.execSQL("drop table" + USER_SYNC);
+        sqLiteDatabase.execSQL("drop table" + MESSAGES);
         onCreate(sqLiteDatabase);
     }
 }
